@@ -1,6 +1,8 @@
 # Binary Converter
 Convert text to binary (and visa versa) with this simple web app. Built using **Vue.js** and **Less**.
 
+View a demo of the project [here](https://scottgriv.github.io/vue-binary_converter/).
+
 ## Project setup
 ```
 npm install
