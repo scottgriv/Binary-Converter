@@ -12,10 +12,10 @@ This file is used to connect this repository to the **PRG** project categorizati
 
 ## Project Information
 
-**Repository Tier:** Bronze <br>
-**Technology:** Markdown, GitHub <br>
-**Category:** Public Template <br>
-**Order:** 2 <br>
+**Repository Tier:** Silver <br>
+**Technology:** Vue.js, JavaScript, Node.js, Less <br>
+**Category:** Web Application <br>
+**Order:** 7 <br>
 
 ## Parameters
 
