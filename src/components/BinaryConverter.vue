@@ -1,4 +1,5 @@
 <template>
+  <h1>Binary Converter</h1>
     <div class="binary-converter">
       <div class="section">
         <textarea v-model="inputText" placeholder="Enter text"></textarea>
