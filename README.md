@@ -22,7 +22,7 @@
 <h1 align="center">Binary Converter</h1>
 
 Convert text to binary (and vice versa) with this simple web application.
-- Built using **Vue.js** and **Less**.
+- Built using **Vue.js** and styled with **Less**.
 - View a demo of the project [here](https://scottgriv.github.io/vue-binary_converter/).
 
 ## Getting Started
