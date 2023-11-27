@@ -28,7 +28,7 @@ Convert text to binary (and vice versa) with this simple web application.
 - View a demo of the project on GitHub Pages **[Here](https://scottgriv.github.io/vue-binary_converter/)**.
 
 <div align="center">
-    <a href="" target="_blank">
+    <a href="https://scottgriv.github.io/vue-binary_converter/" target="_blank">
         <img src="./docs/images/demo.png" style="width: 50%;"/>
     </a>
     <br>
