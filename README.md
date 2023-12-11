@@ -21,7 +21,7 @@
 
 ---------------
 
-<h1 align="center">𝟙𝟘𝟙𝟘 Binary Converter 𝟘𝟙𝟘𝟙</h1>
+<h1 align="center">𝟙𝟘 Binary Converter 𝟘𝟙</h1>
 
 Convert text to binary (and vice versa) with this simple web application.
 - Built using **Vue.js** and styled with **Less**.
