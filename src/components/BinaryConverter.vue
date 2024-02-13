@@ -1,8 +1,13 @@
 <template>
-  <h1>Binary Converter</h1>
+  <div class="title-container">
+    <img alt="Vue logo" src="../assets/logo.png">
+    <h1>Binary Converter</h1>
+  </div>
+  <p class="description">Binary to text conversion involves translating binary code, a series of 0s and 1s, into human-readable text based on character encoding standards like ASCII or Unicode. Conversely, text to binary conversion takes characters from text and represents them as binary numbers, enabling computers to process and store textual information efficiently. This process is fundamental in computing, bridging human language and machine language by encoding and decoding data.</p>
     <div class="binary-converter">
+      <div class="sections-container">
       <div class="section">
-        <textarea v-model="inputText" placeholder="Enter text"></textarea>
+        <textarea v-model="inputText" placeholder="Enter Text"></textarea>
         <button @click="convertToBinary">Convert to Binary</button>
         <div v-if="binaryResult" class="result">
           Binary: {{ binaryResult }}
@@ -15,7 +20,7 @@
         </div>
       </div>
       <div class="section">
-        <textarea v-model="binaryInput" placeholder="Enter binary"></textarea>
+        <textarea v-model="binaryInput" placeholder="Enter Binary"></textarea>
         <button @click="convertToText">Convert to Text</button>
         <div v-if="textResult" class="result">
           Text: {{ textResult }}
@@ -26,6 +31,7 @@
           <div>Kilobytes: {{ textKilobytes }}</div>
           <div>Megabytes: {{ textMegabytes }}</div>
         </div>
+      </div>
       </div>
       <button class="clear-button" @click="clearFields">Reset</button>
     </div>
@@ -71,6 +77,10 @@
     },
     methods: {
       convertToBinary() {
+        if (!this.inputText.trim()) {
+      window.alert("Please enter valid text to convert to binary.");
+      return;
+    }
         const binary = this.inputText
           .split('')
           .map(char => char.charCodeAt(0).toString(2).padStart(8, '0')) // Convert to 8-bit binary
@@ -78,6 +88,18 @@
         this.binaryResult = binary;
       },
       convertToText() {
+
+            // Check if binary input is empty or just whitespace
+    if (!this.binaryInput.trim()) {
+      window.alert("Please enter valid binary code to convert to text.");
+      return;
+    }
+    // Validate the binary input
+    if (!/^[01\s]+$/g.test(this.binaryInput)) {
+      window.alert("This is not valid binary. Please enter a valid binary code.");
+      return;
+    }
+
         const binaryArray = this.binaryInput.split(' ');
         const text = binaryArray
           .map(bin => String.fromCharCode(parseInt(bin, 2)))
@@ -123,4 +145,5 @@
   <style lang="less" scoped>
   @import './BinaryConverter.less';
   </style>
+
   

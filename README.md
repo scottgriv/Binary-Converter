@@ -39,10 +39,18 @@ Convert text to binary (and vice versa) with this simple web application.
 
 ## Table of Contents
 
+- [How This Works](#how-this-works)
 - [Getting Started](#getting-started)
 - [Resources](#resources)
 - [License](#license)
 - [Credits](#credits)
+
+## How This Works
+
+1. Enter text into the left text box and click "Convert to Binary" to convert your text to binary.
+2. Conversely, enter binary into the right text box and click "Convert to Text" to convert your binary to text.
+3. Click "Copy" to copy the value from the output to your clipboard.
+4. Click "Reset" to reset both text fields and start again.
 
 ## Getting Started
 

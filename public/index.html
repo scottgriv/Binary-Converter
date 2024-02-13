@@ -1,11 +1,28 @@
 <!DOCTYPE html>
 <html lang="">
   <head>
+    <title><%= htmlWebpackPlugin.options.title %></title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
-    <title><%= htmlWebpackPlugin.options.title %></title>
+    <meta name="robots" content="index, follow" />
+    <meta name="msapplication-TileColor" content="#333333">
+    <meta name="theme-color" content="#333333">
+    <meta name="description" content="Convert text to binary (and visa versa) with this simple web app. Built using Vue.js and styled with Less.">
+    <meta property="og:title" content="Binary Converter" />
+		<meta property="og:description" content="Convert text to binary (and visa versa) with this simple web app. Built using Vue.js and styled with Less." />
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="https://github.com/scottgriv/vue-binary_converter" />
+		<meta property="og:image" content="<%= BASE_URL %>favicons/icon.png" />
+    <link rel="icon" href="<%= BASE_URL %>favicons/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="<%= BASE_URL %>favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="<%= BASE_URL %>favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="<%= BASE_URL %>favicons/favicon-16x16.png">
+    <link rel="manifest" href="<%= BASE_URL %>favicons/site.webmanifest">
+    <link rel="mask-icon" href="<%= BASE_URL %>favicons/safari-pinned-tab.svg" color="#333333">
+    <link rel="shortcut icon" href="<%= BASE_URL %>favicons/favicon.ico">
+    <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="scottgriv" data-description="Support me on Buy me a coffee!" data-message="I hope this little tool helps you in your development endeavors, please consider supporting me by buying me a coffee! Thank you!" data-color="#4CAF50" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
   </head>
   <body>
     <noscript>
@@ -14,4 +31,7 @@
     <div id="app"></div>
     <!-- built files will be auto injected -->
   </body>
+  <footer>
+    <a href="https://github.com/scottgriv/vue-binary_converter" target="_blank" rel="noreferrer">Check out this Repository on GitHub <i class="fa-brands fa-github fa-bounce"></i></a>
+</footer>    
 </html>
