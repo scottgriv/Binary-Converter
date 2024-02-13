@@ -1,5 +1,5 @@
 module.exports = {
-  publicPath: process.env.NODE_ENV === "production" ? "/vue-binary_converter/" : "/",
+  publicPath: process.env.NODE_ENV === "production" ? "/Binary-Converter/" : "/",
   css: {
     loaderOptions: {
       less: {
