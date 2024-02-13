@@ -7,7 +7,7 @@
     <div class="binary-converter">
       <div class="sections-container">
       <div class="section">
-        <textarea v-model="inputText" placeholder="Enter Text"></textarea>
+        <textarea id="input-text-field" v-model="inputText" placeholder="Enter Text"></textarea>
         <button @click="convertToBinary">Convert to Binary</button>
         <div v-if="binaryResult" class="result">
           Binary: {{ binaryResult }}
@@ -20,7 +20,7 @@
         </div>
       </div>
       <div class="section">
-        <textarea v-model="binaryInput" placeholder="Enter Binary"></textarea>
+        <textarea id="input-binary-field" v-model="binaryInput" placeholder="Enter Binary"></textarea>
         <button @click="convertToText">Convert to Text</button>
         <div v-if="textResult" class="result">
           Text: {{ textResult }}
