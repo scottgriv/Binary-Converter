@@ -30,7 +30,7 @@ Convert text to binary (and vice versa) with this simple web application.
 
 <div align="center">
     <a href="https://scottgriv.github.io/Binary-Converter" target="_blank">
-        <img src="./docs/images/demo.png" style="width: 50%;"/>
+        <img src="./docs/images/demo.png" style="width: 80%;"/>
     </a>
     <br>
     <i>Application Preview</i>
