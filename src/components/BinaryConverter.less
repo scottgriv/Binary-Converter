@@ -136,11 +136,23 @@ body, html {
 
 .section textarea, .section .result, .section button {
   width: 100%; // Ensures these elements take full width of the section
-  max-width: none; // Overrides any max-width set outside the media query
+  max-width: 400px; // Overrides any max-width set outside the media query
   box-sizing: border-box; // Includes padding and border in the width calculation
 }
 
 .section {
   padding: 0;
   margin: 0; /* Reset margins to ensure no unexpected spacing */
+}
+
+.sections-container {
+  width: 500px;
+}
+
+a {
+  color: #FF5722;
+}
+
+a:hover {
+  color: #4CAF50;
 }

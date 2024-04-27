@@ -1,21 +1,27 @@
 <template>
   <div class="title-container">
-    <img alt="Vue logo" src="../assets/logo.png">
+    <a href="https://github.com/scottgriv/Binary-Converter" target="_blank"><img alt="Vue logo" src="../assets/logo.png"></a>
     <h1>Binary Converter</h1>
   </div>
-  <p class="description">Binary to text conversion involves translating binary code, a series of 0s and 1s, into human-readable text based on character encoding standards like ASCII or Unicode. Conversely, text to binary conversion takes characters from text and represents them as binary numbers, enabling computers to process and store textual information efficiently. This process is fundamental in computing, bridging human language and machine language by encoding and decoding data.</p>
+  <p class="description">
+    Binary to text conversion involves translating <a href="https://www.mathsisfun.com/binary-number-system.html" target="_blank">Binary Code, a series of 1s and 0s</a>, into human-readable text based on character encoding standards like 
+    <a href="https://en.wikipedia.org/wiki/ASCII" target="_blank">ASCII</a> or 
+    <a href="https://en.wikipedia.org/wiki/Unicode" target="_blank">Unicode</a>. 
+    Conversely, text to binary conversion takes characters from text and represents them as binary numbers, enabling computers to process and store textual information efficiently. 
+    This process is fundamental in computing, bridging human language and machine language by encoding and decoding data.
+  </p>
     <div class="binary-converter">
       <div class="sections-container">
         <div class="section">
-          <label>Binary → Text</label>
+          <label>Text → Binary</label>
           <textarea id="input-text-field" v-model="inputText" placeholder="Enter Text"></textarea>
-          <button @click="convertToBinary">Convert to Binary</button>
+          <button @click="convertToBinary">Convert</button>
           <div v-if="binaryResult" class="result">
             <div><strong>Binary:</strong></div> <!-- New line for label -->
             <div>{{ binaryResult }}</div> <!-- New line for result -->
             <div class="button-container">
               <button @click="copyBinaryToClipboard(binaryResult)">Copy</button>
-              <div v-if="binaryCopied" class="copy-message">Binary Copied to Clipboard</div>
+              <div v-if="binaryCopied" class="copy-message">Binary Copied to Clipboard!</div>
             </div>
             <div>Bits: {{ binaryBits }}</div>
             <div>Bytes: {{ binaryBytes }}</div>
@@ -24,15 +30,15 @@
           </div>
         </div>
         <div class="section">
-          <label>Text → Binary</label>
+          <label>Binary → Text</label>
           <textarea id="input-binary-field" v-model="binaryInput" placeholder="Enter Binary"></textarea>
-          <button @click="convertToText">Convert to Text</button>
+          <button @click="convertToText">Convert</button>
           <div v-if="textResult" class="result">
             <div><strong>Text:</strong></div> <!-- New line for label -->
             <div>{{ textResult }}</div> <!-- New line for result -->
             <div class="button-container">
               <button @click="copyTextToClipboard(textResult)">Copy</button>
-              <div v-if="textCopied" class="copy-message">Text Copied to Clipboard</div>
+              <div v-if="textCopied" class="copy-message">Text Copied to Clipboard!</div>
             </div>
             <div>Bits: {{ textBits }}</div>
             <div>Bytes: {{ textBytes }}</div>
