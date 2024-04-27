@@ -82,7 +82,10 @@ npm run lint
 - [JavaScript](https://www.javascript.com/) - A lightweight, interpreted, or just-in-time compiled programming language with first-class functions.
 - [Node.js](https://nodejs.org/en/) - A JavaScript runtime built on Chrome's V8 JavaScript engine.
 - [Less](http://lesscss.org/) - A dynamic preprocessor style sheet language that can be compiled into Cascading Style Sheets (CSS) and run on the client-side or server-side.
-- [Binary Number System](https://www.mathsisfun.com/binary-number-system.html) - A way of writing numbers using only two digits: 0 and 1 (the stuff computers use).
+- [Binary Number System Tutorial ](https://www.mathsisfun.com/binary-number-system.html) - A way of writing numbers using only two digits: 0 and 1 (the stuff computers use).
+- [Binary Code](https://en.wikipedia.org/wiki/Binary_code) - A binary code represents text, computer processor instructions, or any other data using a two-symbol system.
+- [ASCII](https://en.wikipedia.org/wiki/ASCII) - ASCII, an acronym for American Standard Code for Information Interchange, is a character encoding standard for electronic communication.
+- [Unicode](https://en.wikipedia.org/wiki/Unicode) - Unicode is a text encoding standard maintained by the Unicode Consortium designed to support the use of text written in all of the world's major writing systems.
 
 ## License
 
