@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box; /* Ensures padding and borders are included in total width and height */
+}
+
 h1 {
   color: #ffffff;
   text-align: center; // Center align the title for better visual appeal
@@ -20,6 +24,14 @@ h1 {
   background-color: #333; // Adds a contrasting background
   border-radius: 8px; // Softens the edges
   box-shadow: 0 2px 4px rgba(0,0,0,0.1); // Adds subtle depth
+}
+
+label {
+  color: #4CAF50;
+  font-family: 'Arial', sans-serif; // Improves readability
+  font-size: 25px; // Ensures text is easily readable
+  font-weight: bold;
+  padding-bottom: 10px;
 }
 
 .section {
@@ -70,7 +82,7 @@ h1 {
 
 .result {
   margin-top: 10px;
-  font-weight: bold;
+  font-weight: normal;
   color: #ffffff;
   background-color: #555;
   padding: 10px;
@@ -83,17 +95,52 @@ h1 {
 
 .clear-button {
   margin-top: 10px;
-  padding: 5px 10px;
-  background-color: #FF5722;
-  color: #fff;
+  padding: 10px 15px;
+  background-color: #FF5722; // A more vibrant color for primary actions
+  color: #ffffff;
   border: none;
-  border-radius: 4px;
-  font-weight: bold;
-  cursor: pointer;
-  text-transform: uppercase;
-  transition: background-color 0.3s ease;
+  border-radius: 4px; // Consistency with other elements
+  font-weight: bold; // Makes button text stand out
+  text-transform: uppercase; // Enhances readability
+  cursor: pointer; // Ensures it's clear the button is clickable
+  transition: background-color 0.3s ease; // Smoothens the hover effect
 
   &:hover {
-    background-color: #e64a19;
+    background-color: #e64a19; // Darkens on hover for feedback
   }
+}
+
+.result, .button-container {
+  display: block; /* Ensures each element appears on a new line */
+  width: 100%; /* Ensures it occupies full width */
+  text-align: center; /* Center-aligns the content */
+}
+
+.result > div, .button-container > button {
+  margin-top: 5px; /* Adds space between elements */
+}
+
+.copy-message {
+  margin-top: 5px; /* Adds space below the copy button */
+}
+
+body, html {
+  margin: 20px;
+  padding: 0;
+  width: 100%; /* Ensures the body takes full width */
+}
+
+.section, .section textarea, .section .result {
+  width: 100%; /* Ensures full width for all major components */
+}
+
+.section textarea, .section .result, .section button {
+  width: 100%; // Ensures these elements take full width of the section
+  max-width: none; // Overrides any max-width set outside the media query
+  box-sizing: border-box; // Includes padding and border in the width calculation
+}
+
+.section {
+  padding: 0;
+  margin: 0; /* Reset margins to ensure no unexpected spacing */
 }

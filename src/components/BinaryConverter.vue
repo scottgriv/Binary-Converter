@@ -6,32 +6,40 @@
   <p class="description">Binary to text conversion involves translating binary code, a series of 0s and 1s, into human-readable text based on character encoding standards like ASCII or Unicode. Conversely, text to binary conversion takes characters from text and represents them as binary numbers, enabling computers to process and store textual information efficiently. This process is fundamental in computing, bridging human language and machine language by encoding and decoding data.</p>
     <div class="binary-converter">
       <div class="sections-container">
-      <div class="section">
-        <textarea id="input-text-field" v-model="inputText" placeholder="Enter Text"></textarea>
-        <button @click="convertToBinary">Convert to Binary</button>
-        <div v-if="binaryResult" class="result">
-          Binary: {{ binaryResult }}
-          <button @click="copyBinaryToClipboard(binaryResult)">Copy</button>
-          <div v-if="binaryCopied" class="copy-message">Binary Copied to Clipboard</div>
-          <div>Bits: {{ binaryBits }}</div>
-          <div>Bytes: {{ binaryBytes }}</div>
-          <div>Kilobytes: {{ binaryKilobytes }}</div>
-          <div>Megabytes: {{ binaryMegabytes }}</div>
+        <div class="section">
+          <label>Binary → Text</label>
+          <textarea id="input-text-field" v-model="inputText" placeholder="Enter Text"></textarea>
+          <button @click="convertToBinary">Convert to Binary</button>
+          <div v-if="binaryResult" class="result">
+            <div><strong>Binary:</strong></div> <!-- New line for label -->
+            <div>{{ binaryResult }}</div> <!-- New line for result -->
+            <div class="button-container">
+              <button @click="copyBinaryToClipboard(binaryResult)">Copy</button>
+              <div v-if="binaryCopied" class="copy-message">Binary Copied to Clipboard</div>
+            </div>
+            <div>Bits: {{ binaryBits }}</div>
+            <div>Bytes: {{ binaryBytes }}</div>
+            <div>Kilobytes: {{ binaryKilobytes }}</div>
+            <div>Megabytes: {{ binaryMegabytes }}</div>
+          </div>
         </div>
-      </div>
-      <div class="section">
-        <textarea id="input-binary-field" v-model="binaryInput" placeholder="Enter Binary"></textarea>
-        <button @click="convertToText">Convert to Text</button>
-        <div v-if="textResult" class="result">
-          Text: {{ textResult }}
-          <button @click="copyTextToClipboard(textResult)">Copy</button>
-          <div v-if="textCopied" class="copy-message">Text Copied to Clipboard</div>
-          <div>Bits: {{ textBits }}</div>
-          <div>Bytes: {{ textBytes }}</div>
-          <div>Kilobytes: {{ textKilobytes }}</div>
-          <div>Megabytes: {{ textMegabytes }}</div>
+        <div class="section">
+          <label>Text → Binary</label>
+          <textarea id="input-binary-field" v-model="binaryInput" placeholder="Enter Binary"></textarea>
+          <button @click="convertToText">Convert to Text</button>
+          <div v-if="textResult" class="result">
+            <div><strong>Text:</strong></div> <!-- New line for label -->
+            <div>{{ textResult }}</div> <!-- New line for result -->
+            <div class="button-container">
+              <button @click="copyTextToClipboard(textResult)">Copy</button>
+              <div v-if="textCopied" class="copy-message">Text Copied to Clipboard</div>
+            </div>
+            <div>Bits: {{ textBits }}</div>
+            <div>Bytes: {{ textBytes }}</div>
+            <div>Kilobytes: {{ textKilobytes }}</div>
+            <div>Megabytes: {{ textMegabytes }}</div>
+          </div>
         </div>
-      </div>
       </div>
       <button class="clear-button" @click="clearFields">Reset</button>
     </div>
